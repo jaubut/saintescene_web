@@ -4,6 +4,7 @@
     <router-link :to="{ name: 'About' }">About</router-link>
     <router-link :to="{ name: 'Calendar' }">Calendar</router-link>
     <router-link :to="{ name: 'Merch' }">Merch</router-link>
+    <router-link :to="{ name: 'Evenement'}">Evenement</router-link>
   </div>
 </template>
 <script>
@@ -15,7 +16,7 @@ export default {
   #Menu
     position: absolute
     z-index: 0
-    background: #A11228
+    background: rgba(white, 0.1)
     margin: 5% 2% 2% 2%
     padding: 2% 2%
     height: auto

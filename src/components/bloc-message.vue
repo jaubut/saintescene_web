@@ -5,7 +5,7 @@
       <h3 class="h3">{{ message.fields.title }}</h3>
       <p class="p">{{ message.fields.body }}</p>
       <a href="#">
-        <div class="btn lire">Lire</div>
+        <div class="btn lire"><p>Lire</p></div>
       </a>
     </div>
     </div>
@@ -26,10 +26,12 @@ export default {
     min-height: 40vh
     height: 100%
     width: auto
-    background-size: 200% 200%
+    background-size: 100%
     background-position: center center
     background-repeat: no-repeat
-    filter: opacity(10%)
+    border-radius: 5px
+    filter: grayscale(100%)
+    opacity: 0.5
   .text
     grid-area: 1/2/2/4
     display: flex
@@ -58,6 +60,10 @@ export default {
     width: 80px
     height: 35px
     border: none
+    &:hover
+      cursor: pointer
+      transform: translateX(5px)
+      transition: transform ease-in-out .5s
   .title
     font-family: 'Germania One', cursive
     font-size: 2rem

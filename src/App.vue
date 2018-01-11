@@ -51,9 +51,11 @@ export default {
 
   html, body
     background: #B2152D
+    background-size: 400% 400%
     margin: 0
     padding: 0
     color: white
+    animation: bgAnim 4s ease infinite
   a
     text-decoration: none
     color: inherit
@@ -89,10 +91,12 @@ export default {
     h3
       color: black
   .active
-    transform: translateY(250px)
+    transform: translateY(300px)
   h1, h2, h3, h4, h5, p
     margin: 0
     padding: 0
+  p
+    font-family: 'Barlow', sans-serif
   .fade-enter-active, .fade-leave-active
     transition: opacity .5s ease-in-out
   .fade-enter, .fade-leave-to
@@ -101,4 +105,11 @@ export default {
     transition: transform .5s ease-in-out
   .transite-enter, .transite-leave-to
     transform: translateY(5px)
+  @keyframes bgAnim
+    0%
+      background-position: 78% 0%
+    50%
+      background-position: 23% 100%
+    100%
+      background-position: 78% 0%
 </style>

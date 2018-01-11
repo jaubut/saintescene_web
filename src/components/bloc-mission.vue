@@ -4,6 +4,7 @@
     <p class="text">{{ text }}</p>
     <div class="img" :style="imgSource"></div>
     <h4 class="signature">{{ signature }}</h4>
+    <span>pst. principaux</span>
   </div>
 </template>
 <script>
@@ -15,7 +16,7 @@ export default {
 <style lang="sass" scoped>
   #blocMission
     display: flex
-    flex-flow: column wrap
+    flex-flow: column nowrap
     justify-content: space-around
     align-items: center
     height: 50vh
@@ -26,9 +27,9 @@ export default {
     color: black
   .text
     font-family: 'Barlow', sans-serif
-    font-size: 0.8rem
+    font-size: 1.1rem
     color: #656565
-    margin-top: -10%
+    padding: 5% 20%
   .img
     height: 70px
     width: 70px
@@ -37,8 +38,12 @@ export default {
     background-repeat: no-repeat
     background-size: cover
   .signature
-    font-family: 'Germania One', cursive
+    font-family: 'Germania One', sans-serif
     font-size: 1.5rem
     color: black
-    align-self: end
+  span
+    margin-top: -20px
+    font-family: 'Barlow', sans-serif
+    font-size: 0.8rem
+    color: rgba(black, 0.6)
 </style>

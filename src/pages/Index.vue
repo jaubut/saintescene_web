@@ -1,9 +1,9 @@
 <template>
   <div id="Index">
     <BlocMission  title="Notre Mission"
-                  text="Notre mission est de faire on earth as it is in heaven."
-                  signature="Sam & Laure"
-                  imgSource="background-image: url(../assets/photo-test.jpg);"
+                  text="Sainte Scène est une église non-traditionnel, une communion, une communauté, un corp, trois générations rassemblé pour Jésus. Elle dépasse les barrières des traditions toute en conservant sa fondation, elle est intime et glorieuse, poursuivant l’Esprit de Dieu. Sainte Scène est une scène apostolique, prophétique et même artistique avec un seul mandat Jésus."
+                  signature="Samuel & Laure"
+                  imgSource='background-image: url(/static/img/icons/android-chrome-192x192.png);'
     ></BlocMission>
     <div class="message-section">
       <h3 class="tag">Messages</h3>
@@ -11,8 +11,9 @@
         <BlocMessage :message="message"></BlocMessage>
       </div>
       <div class="line"></div>
-      <div class="penser" v-for="pense in penses">
-        <BlocPenser :pense="pense"></BlocPenser>
+      <div class="penser">
+        <h3 class="tag-actu">Actualités</h3>
+        <BlocPenser v-for="pense in penses" :key="pense.title" :pense="pense"></BlocPenser>
       </div>
     </div>
     <PhotoApi SectionPhoto="photo-section" IndexPhoto="photo"></PhotoApi>
@@ -76,7 +77,7 @@ export default {
   .line
     grid-area: 2/1/4/2
     border-right: 3px solid black
-    margin: 10% 0 
+    margin: 10% 0
   .messages
     grid-area: 2/1/4/2
     padding: 5%
@@ -96,6 +97,10 @@ export default {
     justify-content: center
     align-items: center
     font-family: 'Germania One', cursive
+  .tag-actu
+    font-size: 2rem
+    font-family: 'Germania One', cursive
+    padding: 5%
   .photo-section
     width: 100%
     display: grid
