@@ -1,57 +1,72 @@
 <template>
-  <div id="blocMessage">
-    <div class="photo" :style="{'background-image': 'url(' + message.fields.background.fields.file.url + ')'}"></div>
-    <div class="text">
+  <div @mouseover="openHover" @mouseleave="closeHover"  id="blocMessage" :style="{'background-image': 'url(' + message.fields.background.fields.file.url + ')'}">
+    <div v-if="hoverPhoto" class="text">
       <h3 class="h3">{{ message.fields.title }}</h3>
       <p class="p">{{ message.fields.body }}</p>
       <a href="#">
-        <div class="btn lire"><p>Lire</p></div>
+        <div class="btn lire"><p>Jouer</p></div>
       </a>
-    </div>
     </div>
   </div>
 </template>
 <script>
 export default {
   name: 'blocMessage',
-  props: ['message']
+  props: ['message'],
+  data () {
+    return {
+      hoverPhoto: false
+    }
+  },
+  methods: {
+    openHover () {
+      this.hoverPhoto = true
+    },
+    closeHover () {
+      this.hoverPhoto = false
+    }
+  }
 }
 </script>
 <style lang="sass" scoped>
   #blocMessage
-    display: grid
-    grid-template: 100% / 37.5% 15% 37.5%
-  .photo
-    grid-area: 1/1/2/3
-    min-height: 40vh
-    height: 100%
-    width: auto
-    background-size: 100%
+    min-height: 55vh
+    grid-column: span 1
+    padding: 5%
+    background: #F8F8F8
+    display: flex
+    justify-content: center
+    align-items: center
     background-position: center center
-    background-repeat: no-repeat
-    border-radius: 5px
-    filter: grayscale(100%)
-    opacity: 0.5
+  .play
+    height: 75px
+    width: auto
   .text
-    grid-area: 1/2/2/4
+    height: 100%
+    width:  100%
+    background: rgba(#B2152D,0.3)
+    border: 2px solid white
     display: flex
     flex-flow: column wrap
-    justify-content: space-around
+    justify-content: center
     align-items: center
-    padding-left: 15%
     .h3
-      align-self: start
       font-family: 'Germania One', cursive
       font-size: 4rem
+      color: white
     .p
-      align-self: start
       font-family: 'Barlow', sans-serif
-      color: black
+      color: white
       font-size: 0.8rem
+      padding-bottom: 50px
     .lire
       background-color: #B2152D
       color: white
       align-self: center
+  @media(max-width:468px)
+    .text
+      .h3
+        font-size: 2rem
   .btn
     display: flex
     justify-content: center

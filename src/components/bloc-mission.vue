@@ -2,7 +2,7 @@
   <div id="blocMission">
     <h3 class="title">{{ title }}</h3>
     <p class="text">{{ text }}</p>
-    <div class="img" :style="imgSource"></div>
+    <div class="img"></div>
     <h4 class="signature">{{ signature }}</h4>
     <span>pst. principaux</span>
   </div>
@@ -19,30 +19,43 @@ export default {
     flex-flow: column nowrap
     justify-content: space-around
     align-items: center
-    height: 50vh
-    padding: 5%
+    height: 100%
+    padding: 5% 5% 20% 5%
+  @media(min-width:468px)
+    #blocMission
+      padding: 5%
   .title
     font-family: 'Germania One', cursive
     font-size: 3rem
     color: black
   .text
     font-family: 'Barlow', sans-serif
-    font-size: 1.1rem
+    text-align: justify
+    font-size: 0.9rem
     color: #656565
-    padding: 5% 20%
+    padding: 5%
+    margin: 30px 0 0 0
+  @media(min-width:468px)
+    .text
+      margin-top: 0
+      font-size: 1.1rem
+      padding: 20%
+      margin: 50px 0
   .img
-    height: 70px
-    width: 70px
+    height: 125px
+    width: 125px
     border-radius: 100%
     background-position: center center
     background-repeat: no-repeat
     background-size: cover
+    background-image: url(../assets/laureetsam-2.png)
   .signature
     font-family: 'Germania One', sans-serif
     font-size: 1.5rem
     color: black
+    margin-top: 15px
   span
-    margin-top: -20px
+    margin-top: 0
     font-family: 'Barlow', sans-serif
     font-size: 0.8rem
     color: rgba(black, 0.6)

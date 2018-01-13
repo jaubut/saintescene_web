@@ -1,20 +1,16 @@
 <template>
   <div id="Index">
     <BlocMission  title="Notre Mission"
-                  text="Sainte Scène est une église non-traditionnel, une communion, une communauté, un corp, trois générations rassemblé pour Jésus. Elle dépasse les barrières des traditions toute en conservant sa fondation, elle est intime et glorieuse, poursuivant l’Esprit de Dieu. Sainte Scène est une scène apostolique, prophétique et même artistique avec un seul mandat Jésus."
+                  text="Sainte Scène est une église non-traditionnelle, une communion, une communauté, un corps, trois générations rassemblées pour Jésus. Elle dépasse les barrières des traditions tout en conservant sa fondation; elle est intime et glorieuse; poursuivant l’Esprit de Dieu. Sainte Scène est une scène apostolique, prophétique, et même artistique avec un seul mandat, Jésus."
                   signature="Samuel & Laure"
-                  imgSource='background-image: url(/static/img/icons/android-chrome-192x192.png);'
     ></BlocMission>
+    <div class="tag">
+      <h3>Messages</h3>
+    </div>
     <div class="message-section">
-      <h3 class="tag">Messages</h3>
-      <div class="messages" v-for="message in messages">
+      <template v-for="message in messages">
         <BlocMessage :message="message"></BlocMessage>
-      </div>
-      <div class="line"></div>
-      <div class="penser">
-        <h3 class="tag-actu">Actualités</h3>
-        <BlocPenser v-for="pense in penses" :key="pense.title" :pense="pense"></BlocPenser>
-      </div>
+      </template>
     </div>
     <PhotoApi SectionPhoto="photo-section" IndexPhoto="photo"></PhotoApi>
   </div>
@@ -70,45 +66,37 @@ export default {
 <style lang="sass" scoped>
   #Index
     width: 100%
-  .message-section
-    height: 55vh
-    display: grid
-    grid-template: 7.5% 7.5% 85% / 65% 35%
-  .line
-    grid-area: 2/1/4/2
-    border-right: 3px solid black
-    margin: 10% 0
-  .messages
-    grid-area: 2/1/4/2
-    padding: 5%
-    background: #F8F8F8
-    display: flex
-    justify-content: center
-    align-items: center
-  .tag
-    z-index: 1
-    grid-area: 1/1/3/2
-    background: black
-    color: white
     height: 100%
-    width: 180px
-    margin-left: 20%
+  .message-section
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-auto-rows: auto
+    grid-gap: 10px
+    height: 100%
+    padding: 0 5% 3% 3%
+  .tag
+    width: 100%
+    color: black
+    font-family: 'Germania One', cursive
+    font-size: 3rem
     display: flex
     justify-content: center
     align-items: center
-    font-family: 'Germania One', cursive
-  .tag-actu
-    font-size: 2rem
-    font-family: 'Germania One', cursive
-    padding: 5%
   .photo-section
     width: 100%
     display: grid
-    grid-template: 45% 25% 25% / repeat(auto-fill, 23%)
+    grid-template: 1fr 1fr / 1fr 1fr
     grid-gap: 5px
     justify-content: space-around
     margin: 1% 0
+  @media(min-width:468px)
+    .photo-section
+      grid-template: 45% 25% 25% / repeat(auto-fill, 23%)
   .penser
-    grid-area: 2/2/4/3
+    grid-area: 4/1/5/3
     background: #F8F8F8
+    height: 100%
+  @media(min-width:468px)
+    .penser
+      grid-area: 2/2/4/3
 </style>

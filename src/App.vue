@@ -1,6 +1,9 @@
 <template>
   <div id="app">
     <header>
+      <a v-if="currentDate === 0" href="#">
+        <img class="live clr" src="./assets/live-bleu.svg" alt="live logo">
+      </a>
       <router-link :to="{ name: 'Index' }">
         <h1 class="logo">Sainte Scène</h1>
       </router-link>
@@ -35,6 +38,12 @@ export default {
       show: false
     }
   },
+  computed: {
+    currentDate () {
+      let today = new Date()
+      return today.getDay()
+    }
+  },
   methods: {
     trigger () {
       this.show = !this.show
@@ -65,11 +74,11 @@ export default {
     height: 50px
     display: flex
     flex-flow: row wrap
-    justify-content: space-between
     align-items: center
     padding: 0 50px
     .burger
       height: 10px
+      margin-left: auto
       &:hover
         cursor: pointer
       &:active
@@ -77,13 +86,17 @@ export default {
         transition: transform 0.5s ease-in-out
     .logo
       font-family: 'Germania One', cursive
-      font-size: 1.2rem
+      font-size: 1.5rem
+      font-weight: 200
+    .live
+      height: 60%
+      margin-left: -25px
+      padding-right: 10px
   main
     background: white
     display: flex
     margin: 0 2% 5% 2%
     height: 100%
-    min-height: 100vh
     width: 96%
     border-radius: 5px
     z-index: 1
