@@ -51,7 +51,7 @@ export default {
     height: 100%
     width:  100%
     background: rgba(#B2152D,0.3)
-    border: 2px solid white
+    border: 2px solid #B2152D
     display: flex
     flex-flow: column wrap
     justify-content: center
