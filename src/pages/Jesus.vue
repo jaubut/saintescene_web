@@ -10,7 +10,19 @@
 </template>
 <script>
 export default {
-  name: 'Jesus'
+  name: 'Jesus',
+  metaInfo () {
+    return {
+      title: 'Jésus',
+      meta: [
+        { property: 'og:url', content: 'https://www.saintescene.com/' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:title', content: 'Sainte Scène' },
+        { property: 'og:description', content: 'On de loeuvre de Jésus.' },
+        {property: 'og:image', content: '../assets/saintescene.jpeg'}
+      ]
+    }
+  }
 }
 </script>
 <style lang="sass" scoped>

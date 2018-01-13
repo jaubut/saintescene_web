@@ -1,5 +1,16 @@
 <template>
   <div id="Footer">
+    <div class="social">
+      <a href="https://www.youtube.com/channel/UCSX2aF_9i2D-wPd8gb9qfcw" target="_blanck">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://www.facebook.com/Sainte-Sc%C3%A8ne-1529585407088599/" target="_blanck">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/saintescene/" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
     <div class="line"></div>
     <h1 class="footer-logo">Sainte Scène</h1>
     <div class="text-group">
@@ -43,6 +54,19 @@ export default {
     display: grid
     grid-template: 5% 65% 20% / 5% 45% 45% 5%
     padding: 5% 0
+  .social
+    grid-area: 1/2/2/4
+    display: flex
+    justify-content: flex-end
+    padding-bottom: 25px
+    margin-top: -25px
+    font-size: 1.2em
+    a
+      cursor: pointer
+      padding: 0 10px
+      &:hover
+        transform: scale(1.5)
+        transition: ease-in-out
   .line
     grid-area: 1/2/2/4
     width: 100%

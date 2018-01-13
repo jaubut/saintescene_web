@@ -2,14 +2,26 @@
   <div id="Menu">
     <router-link :to="{ name: 'Jesus' }">Jésus</router-link>
     <router-link :to="{ name: 'Apropos' }">Nous sommes</router-link>
-    <router-link :to="{ name: 'Calendar' }">Calendrier</router-link>
     <router-link :to="{ name: 'Merch' }">Boutique</router-link>
     <router-link :to="{ name: 'Evenement'}">Évènement</router-link>
   </div>
 </template>
 <script>
 export default {
-  name: 'Menu'
+  name: 'Menu',
+  data () {
+    return {
+      Hover: false
+    }
+  },
+  methods: {
+    openHover () {
+      this.Hover = true
+    },
+    closeHover () {
+      this.Hover = false
+    }
+  }
 }
 </script>
 <style lang="sass" scoped>

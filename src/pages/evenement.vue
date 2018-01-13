@@ -38,7 +38,19 @@
 </template>
 <script>
 export default {
-  name: 'evenement'
+  name: 'evenement',
+  metaInfo () {
+    return {
+      title: 'Évènement',
+      meta: [
+        { property: 'og:url', content: 'https://www.saintescene.com/' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:title', content: 'Sainte Scène' },
+        { property: 'og:description', content: 'On de loeuvre de Jésus.' },
+        {property: 'og:image', content: '../assets/evenement-bstudy.jpg'}
+      ]
+    }
+  }
 }
 </script>
 <style lang="sass" scoped>

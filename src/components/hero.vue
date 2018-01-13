@@ -26,4 +26,6 @@ export default {
     @media(max-width:468px)
       h1
         font-size: 3rem
+  .black
+    color: black
 </style>
