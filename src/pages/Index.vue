@@ -1,9 +1,10 @@
 <template>
   <div id="Index">
     <div class="video">
-      <video autoplay muted>
+      <video autoplay muted poster="../assets/logo-stripe.svg">
         <source src="../assets/videohd.webm" type="video/webm">
         <source src="../assets/videohd.mp4" type="video/mp4">
+        <h1>Sainte Scène</h1>
       </video>
     </div>
     <BlocMission  title="Notre Mission"
