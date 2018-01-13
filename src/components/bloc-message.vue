@@ -35,14 +35,16 @@ export default {
 </script>
 <style lang="sass" scoped>
   #blocMessage
-    min-height: 55vh
+    height: 55vh
     grid-column: span 1
     padding: 5%
     background: #F8F8F8
     display: flex
     justify-content: center
     align-items: center
+    background-repeat: no-repeat
     background-position: center center
+    overflow: hidden
   .play
     position: absolute
     height: 75px
@@ -50,12 +52,13 @@ export default {
   .text
     height: 100%
     width:  100%
+    padding: 100% 0
     background: rgba(#B2152D,0.3)
-    border: 2px solid #B2152D
     display: flex
     flex-flow: column wrap
     justify-content: center
     align-items: center
+    overflow: hidden
     .h3
       font-family: 'Germania One', cursive
       font-size: 4rem

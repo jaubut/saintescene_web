@@ -20,10 +20,7 @@ export default {
     justify-content: space-around
     align-items: center
     height: 100%
-    padding: 5% 5% 20% 5%
-  @media(min-width:468px)
-    #blocMission
-      padding: 5%
+    padding: 5%
   .title
     font-family: 'Germania One', cursive
     font-size: 3rem
@@ -39,8 +36,8 @@ export default {
     .text
       margin-top: 0
       font-size: 1.1rem
-      padding: 20%
-      margin: 50px 0
+      padding: 0 20%
+      margin: 50px 0 20px 0
   .img
     height: 125px
     width: 125px
