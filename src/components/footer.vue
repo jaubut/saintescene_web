@@ -72,13 +72,13 @@ export default {
     width: 100%
     border-top: 4.5px solid #F8C3C8
   .footer-logo
-    grid-area: 2/2/3/3
+    grid-area: 2/2/3/4
     font-family: 'Germania One', cursive
     font-size: 1.5rem
     font-weight: 200
     margin: 15px
   .footer-coupe
-    grid-area: 2/3/3/4
+    grid-area: 3/3/4/4
     height: 42px
     align-self: end
     margin-left: auto
@@ -94,7 +94,7 @@ export default {
       justify-content: flex-start
   .text
     display: flex
-    flex-flow: column wrap
+    flex-flow: column nowrap
     justify-content: space-between
     align-items: flex-start
     padding-top: 50px
