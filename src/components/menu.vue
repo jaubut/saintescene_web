@@ -3,7 +3,7 @@
     <router-link :to="{ name: 'Jesus' }">Jésus</router-link>
     <router-link :to="{ name: 'Apropos' }">Nous sommes</router-link>
     <router-link :to="{ name: 'Merch' }">Boutique</router-link>
-    <router-link :to="{ name: 'Evenement'}">Évènement</router-link>
+    <router-link :to="{ name: 'Evenement'}">Événements</router-link>
   </div>
 </template>
 <script>

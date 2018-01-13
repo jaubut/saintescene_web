@@ -35,7 +35,8 @@ export default {
   @media(min-width:468px)
     .text
       margin-top: 0
-      font-size: 1.1rem
+      font-size: 1.2rem
+      font-weight: 100
       padding: 0 20%
       margin: 50px 0 20px 0
   .img
@@ -45,7 +46,7 @@ export default {
     background-position: center center
     background-repeat: no-repeat
     background-size: cover
-    background-image: url(../assets/laureetsam-2.png)
+    background-image: url(../assets/laureetsam-2.jpg)
   .signature
     font-family: 'Germania One', sans-serif
     font-size: 1.5rem

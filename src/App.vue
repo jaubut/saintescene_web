@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <header>
-      <a v-if="currentDate === 0" href="#">
+      <a v-if="currentDate === 0" onclick="setTimeout(function () { window.location = 'https://www.facebook.com/Sainte-Scène-1529585407088599/'; }, 2500);
+window.location = 'fb://facewebmodal/=pagename';">
         <img class="live clr" src="./assets/live-bleu.svg" alt="live logo">
       </a>
       <router-link :to="{ name: 'Index' }">
@@ -48,6 +49,10 @@ export default {
     currentDate () {
       let today = new Date()
       return today.getDay()
+    },
+    currentHour () {
+      let today = new Date()
+      return today.getHours()
     }
   },
   methods: {
@@ -65,7 +70,7 @@ export default {
   @import url('https://fonts.googleapis.com/css?family=Barlow|Germania+One')
 
   html, body
-    background: #B2152D
+    background: #A50E2F
     background-size: 400% 400%
     margin: 0
     padding: 0
@@ -94,10 +99,17 @@ export default {
       font-family: 'Germania One', cursive
       font-size: 1.5rem
       font-weight: 200
+      padding-left: 10px
     .live
       height: 60%
       margin-left: -25px
-      padding-right: 10px
+      animation: bounce 2.0s infinite ease-in-out
+      cursor: pointer
+  @keyframes bounce
+    0%, 100%
+      transform: scale(0.85)
+    50%
+      transform: scale(1)
   main
     background: white
     display: flex

@@ -1,8 +1,13 @@
 <template>
   <div id="Index">
+    <div class="video">
+      <video src="../assets/videohd.webm" autoplay muted>
+
+      </video>
+    </div>
     <BlocMission  title="Notre Mission"
                   text="Sainte Scène est une église non-traditionnelle, une communion, une communauté, un corps, trois générations rassemblées pour Jésus. Elle dépasse les barrières des traditions tout en conservant sa fondation; elle est intime et glorieuse; poursuivant l’Esprit de Dieu. Sainte Scène est une scène apostolique, prophétique, et même artistique avec un seul mandat, Jésus."
-                  signature="Samuel & Laure"
+                  signature="Samuel & Laure Gingras"
     ></BlocMission>
     <div class="tag">
       <h3>Messages</h3>
@@ -88,6 +93,25 @@ export default {
       font-size: 3rem
   .link
     color: #B2152D
+  .video
+    width: 100%
+    height: 55vh
+    overflow: hidden
+    display: flex
+    flex-flow: column wrap
+    justify-content: center
+    align-items: center
+    background: #A50E2F
+    video
+      width: 100%
+      height: auto
+    img
+      width: 20%
+      height: auto
+    h1
+      font-family: 'Germania One', cursive
+      font-weight: 400
+      font-size: 3rem
   .photo-section
     width: 100%
     display: grid
