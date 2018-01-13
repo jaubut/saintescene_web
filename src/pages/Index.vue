@@ -6,6 +6,7 @@
     ></BlocMission>
     <div class="tag">
       <h3>Messages</h3>
+      <p>Voir tous <a href="#"><span class="link">les messages</span></a></p>
     </div>
     <div class="message-section">
       <template v-for="message in messages">
@@ -77,11 +78,16 @@ export default {
   .tag
     width: 100%
     color: black
-    font-family: 'Germania One', cursive
-    font-size: 3rem
     display: flex
+    flex-flow: column nowrap
     justify-content: center
     align-items: center
+    padding: 5% 0
+    h3
+      font-family: 'Germania One', cursive
+      font-size: 3rem
+  .link
+    color: #B2152D
   .photo-section
     width: 100%
     display: grid
@@ -92,11 +98,4 @@ export default {
   @media(min-width:468px)
     .photo-section
       grid-template: 45% 25% 25% / repeat(auto-fill, 23%)
-  .penser
-    grid-area: 4/1/5/3
-    background: #F8F8F8
-    height: 100%
-  @media(min-width:468px)
-    .penser
-      grid-area: 2/2/4/3
 </style>

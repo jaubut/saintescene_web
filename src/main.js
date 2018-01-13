@@ -3,8 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import Hero from '@/components/hero'
 
 var contentful = require('contentful')
+
+Vue.component('Hero', Hero)
 
 Vue.use(contentful)
 Vue.config.productionTip = false

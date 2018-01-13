@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Index from '@/pages/Index'
 import Jesus from '@/pages/Jesus'
 import Evenement from '@/pages/evenement'
+import About from '@/pages/about'
 Vue.use(Router)
 
 export default new Router({
@@ -22,6 +23,11 @@ export default new Router({
       path: '/evenement',
       name: 'Evenement',
       component: Evenement
+    },
+    {
+      path: '/apropos',
+      name: 'Apropos',
+      component: About
     }
   ]
 })

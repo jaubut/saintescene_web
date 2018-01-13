@@ -1,12 +1,17 @@
 <template>
   <div @mouseover="openHover" @mouseleave="closeHover"  id="blocMessage" :style="{'background-image': 'url(' + message.fields.background.fields.file.url + ')'}">
-    <div v-if="hoverPhoto" class="text">
-      <h3 class="h3">{{ message.fields.title }}</h3>
-      <p class="p">{{ message.fields.body }}</p>
-      <a href="#">
-        <div class="btn lire"><p>Jouer</p></div>
-      </a>
-    </div>
+    <transition name="fade">
+      <img v-if="hoverPhoto === false" class="play" src="../assets/play-logo.svg" alt="">
+    </transition>
+    <transition name="fade">
+      <div v-if="hoverPhoto" class="text">
+        <h3 class="h3">{{ message.fields.title }}</h3>
+        <p class="p">{{ message.fields.body }}</p>
+        <a href="#">
+          <div class="btn lire"><p>Jouer</p></div>
+        </a>
+      </div>
+    </transition>
   </div>
 </template>
 <script>
@@ -39,6 +44,7 @@ export default {
     align-items: center
     background-position: center center
   .play
+    position: absolute
     height: 75px
     width: auto
   .text
@@ -64,6 +70,8 @@ export default {
       color: white
       align-self: center
   @media(max-width:468px)
+    #blocMessage
+      grid-column: span 2
     .text
       .h3
         font-size: 2rem

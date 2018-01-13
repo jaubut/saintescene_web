@@ -1,5 +1,6 @@
 <template>
   <div id="evenement">
+    <Hero class="hero-event"><h1>Évènement</h1></Hero>
     <div class="event">
       <div class="picture">
         <p>Dimanche</p>
@@ -44,7 +45,6 @@ export default {
   #evenement
     width: 100%
     height: 100%
-    padding: 25px 0
   .event
     display: grid
     grid-template: 100% / 10% 10% 10% 70%
@@ -85,4 +85,6 @@ export default {
       font-size: 1.2rem
       line-height: 1.6rem
       margin-top: 10%
+  .hero-event
+    background-image: url(../assets/evenement-bstudy.jpg)
 </style>
