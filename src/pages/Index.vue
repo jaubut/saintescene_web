@@ -1,8 +1,9 @@
 <template>
   <div id="Index">
     <div class="video">
-      <video src="../assets/videohd.webm" autoplay muted>
-
+      <video autoplay muted>
+        <source src="../assets/videohd.webm" type="video/webm">
+        <source src="../assets/videohd.mp4" type="video/mp4">
       </video>
     </div>
     <BlocMission  title="Notre Mission"
