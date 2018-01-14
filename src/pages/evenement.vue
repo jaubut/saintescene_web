@@ -9,7 +9,7 @@
       <div class="text-group">
         <h2>Dimanche</h2>
         <span>10am - 12pm</span>
-        <p>Notre communauté Sainte Scène a son rassemblement principal à Granby le dimanche matin à 10h au 1236 Rue Saint Charles S.<br></br> Vous y trouverez une expérience musicale avec louange, une équipe pastorale et des leaders qui partageront de tout cœur, le cœur de Dieu pour vous aider à grandir:  âme, corps, et esprit.  Ce n’est pas un spectacle, c’est une Sainte Scène pour les jeunes et les plus vieux, les familles, les célibataires, les ados, les enfants, les pauvres et les riches.  Nous sommes en communion tous les Dimanches à 10h.  Fais partie de la Sainte Scène.</p>
+        <p>Notre communauté Sainte Scène a son rassemblement principal à Granby le dimanche matin à 10h au 1236 Rue Saint Charles S.<br></br> Vous y trouverez une expérience musicale avec louange, une équipe pastorale et des leaders qui partageront de tout cœur, le cœur de Dieu pour vous aider à grandir:  âme, corps, et esprit.  Ce n’est pas un spectacle, c’est une Sainte Scène pour toutes les générations, les familles, les jeunes et les plus vieux, les familles, les célibataires, les ados et les enfants.  Nous sommes en communion tous les Dimanches à 10h.  Fais partie de la Sainte Scène.</p>
       </div>
     </div>
     <div class="event">
@@ -29,7 +29,7 @@
       </div>
       <div class="line"></div>
       <div class="text-group">
-        <h2>B study</h2>
+        <h2>Bstudy</h2>
         <span>7pm - 9pm</span>
         <p>Le Bstudy, ce sont nos études bibliques qui se tiennent le mercredi soir à 19h dans les cafés, dans les pubs, dans les maisons ou autres.  Ces moments de connexions ne sont pas des enseignements mais plutôt des partages sur des chapitres de la Bible lus par tous et dirigés par un de nos leaders passionnés.<br></br> Le Bstudy fait partie de la vie active dans les coulisses de Sainte Scène pour renverser la statistique que plus de 90% des chrétiens n’ont jamais lu la Bible de A à Z.  C’est une place d’échanges où nous pouvons être vrais, mettre les cartes sur la table et avoir des réponses à plein de questions simples ou profondes.  Tu veux aller plus loin ? Participe au Bstudy.</p>
       </div>
