@@ -123,6 +123,24 @@ export default {
       color: black
   .active
     transform: translateY(300px)
+  .container
+    display: flex
+    flex-flow: column wrap
+    justify-content: center
+    align-items: center
+    padding: 5% 20%
+    .first-letter
+      font-family: 'Germania One', cursive
+      font-size: 3rem
+      align-self: flex-start
+    p
+      color: black
+      line-height: 1.6rem
+      text-align: justify
+      margin: 50px 0
+  @media(max-width:468px)
+    .container
+      padding: 5% 5%
   h1, h2, h3, h4, h5, p
     margin: 0
     padding: 0

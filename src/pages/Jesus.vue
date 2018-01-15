@@ -32,22 +32,4 @@ export default {
   .hero-jesus
     background-image: url(../assets/saintescene.jpeg)
     background-position: top !important
-  .container
-    display: flex
-    flex-flow: column wrap
-    justify-content: center
-    align-items: center
-    padding: 5% 20%
-    .first-letter
-      font-family: 'Germania One', cursive
-      font-size: 3rem
-      align-self: flex-start
-    p
-      color: black
-      line-height: 1.6rem
-      text-align: justify
-      margin: 50px 0
-  @media(max-width:468px)
-    .container
-      padding: 5% 5%
 </style>

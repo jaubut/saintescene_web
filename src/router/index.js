@@ -6,6 +6,7 @@ import Jesus from '@/pages/Jesus'
 import Evenement from '@/pages/evenement'
 import About from '@/pages/about'
 import Merch from '@/pages/boutique'
+import Implique from '@/pages/implique'
 
 Vue.use(Meta)
 Vue.use(Router)
@@ -41,6 +42,12 @@ export default new Router({
       path: '/boutique',
       name: 'Merch',
       component: Merch,
+      props: true
+    },
+    {
+      path: '/implique',
+      name: 'Implique',
+      component: Implique,
       props: true
     }
   ]
