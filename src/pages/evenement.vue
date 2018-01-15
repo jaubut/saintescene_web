@@ -8,8 +8,8 @@
       <div class="line"></div>
       <div class="text-group">
         <h2>Dimanche</h2>
-        <span>10am - 12pm</span>
-        <p>Notre communauté Sainte Scène a son rassemblement principal à Granby le dimanche matin à 10h au 1236 Rue Saint Charles S.<br></br> Vous y trouverez une expérience musicale avec louange, une équipe pastorale et des leaders qui partageront de tout cœur, le cœur de Dieu pour vous aider à grandir:  âme, corps, et esprit.  Ce n’est pas un spectacle, c’est une Sainte Scène pour toutes les générations, les familles, les jeunes et les plus vieux, les familles, les célibataires, les ados et les enfants.  Nous sommes en communion tous les Dimanches à 10h.  Fais partie de la Sainte Scène.</p>
+        <span>10h - 12h</span>
+        <p>Notre communauté Sainte Scène a son rassemblement principal à Granby, le dimanche matin à 10h au 1236 rue St-Charles S.<br></br> Vous y trouverez une expérience musicale avec louange, une équipe pastorale et des leaders qui partageront de tout cœur, le cœur de Dieu pour vous aider à grandir:  âme, corps, et esprit.  Ce n’est pas un spectacle, c’est une <strong>Sainte Scène</strong> pour toutes les générations, les familles, les célibataires, les ados et les enfants. Tous sont bienvenus ! Nous sommes en communion tous les dimanches à 10h.  Fais partie de la <strong>Sainte Scène</strong>.</p>
       </div>
     </div>
     <div class="event">
@@ -18,9 +18,9 @@
       </div>
       <div class="line"></div>
       <div class="text-group">
-        <h2>Bouclier du matin</h2>
-        <span>7am - 9am</span>
-        <p>Les Boucliers du Matin, sont les premières lumières allumées dans les coulisses de Sainte Scène. De 7h à 9h, du mardi au vendredi, fais partie de l’équipe de prière qui se rencontre pour intercéder les uns pour les autres, pour notre communauté, notre ville, notre région, notre province et notre nation. La prière active tout!<br><br/><a href="https://www.google.ca/maps/place/1236+Rue+Saint+Charles+S,+Granby,+QC+J2J+0L6/@45.3416945,-72.7487631,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc9c54fe2bf925d:0x1c5a162a6849e0e1!8m2!3d45.3416945!4d-72.7465744"target="_blank"><p>Lieu de rencontre: 1236 Rue Saint Charles S.</p></a></p>
+        <h2>Boucliers du matin</h2>
+        <span>7h - 9h</span>
+        <p>Les Boucliers du Matin, sont les premières lumières allumées dans les coulisses de <strong>Sainte Scène</strong>. De 7h à 9h, du mardi au vendredi, fais partie de l’équipe de prière qui se rencontre pour intercéder les uns pour les autres, pour notre communauté, notre ville, notre région, notre province et notre nation. La prière active tout !<br><br/><a href="https://www.google.ca/maps/place/1236+Rue+Saint+Charles+S,+Granby,+QC+J2J+0L6/@45.3416945,-72.7487631,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc9c54fe2bf925d:0x1c5a162a6849e0e1!8m2!3d45.3416945!4d-72.7465744"target="_blank"><p>Lieu de rencontre: 1236 rue St-Charles S.</p></a></p>
       </div>
     </div>
     <div class="event">
@@ -30,8 +30,8 @@
       <div class="line"></div>
       <div class="text-group">
         <h2>Bstudy</h2>
-        <span>7pm - 9pm</span>
-        <p>Le Bstudy, ce sont nos études bibliques qui se tiennent le mercredi soir à 19h dans les cafés, dans les pubs, dans les maisons ou autres.  Ces moments de connexions ne sont pas des enseignements mais plutôt des partages sur des chapitres de la Bible lus par tous et dirigés par un de nos leaders passionnés.<br></br> Le Bstudy fait partie de la vie active dans les coulisses de Sainte Scène pour renverser la statistique que plus de 90% des chrétiens n’ont jamais lu la Bible de A à Z.  C’est une place d’échanges où nous pouvons être vrais, mettre les cartes sur la table et avoir des réponses à plein de questions simples ou profondes.  Tu veux aller plus loin ? Participe au Bstudy.</p>
+        <span>19h - 21h</span>
+        <p>Le Bstudy, ce sont nos études bibliques qui se tiennent le mercredi soir à 19h dans les cafés, dans les pubs, dans les maisons ou autres.  Ces moments de connexions ne sont pas des enseignements mais plutôt des partages sur des chapitres de la Bible lus par tous et dirigés par un de nos leaders passionnés.<br></br> Le Bstudy fait partie de la vie active dans les coulisses de <strong>Sainte Scène</strong> pour renverser la statistique que plus de 90% des chrétiens n’ont jamais lu la Bible de A à Z.  C’est une place d’échanges où nous pouvons être vrais, mettre les cartes sur la table et avoir des réponses à plein de questions simples ou profondes. Veux-tu aller plus loin ? Participe au Bstudy.</p>
       </div>
     </div>
     <div class="event">
@@ -41,8 +41,8 @@
       <div class="line"></div>
       <div class="text-group">
         <h2>Groupe Connexion</h2>
-        <span>7pm - 9pm</span>
-        <p>Les Groupes Connexions sont des moments de connexion et de fraternité.  La plupart de nos groupes opèrent le Mercredi soir à 19h dans nos locaux, dans des maisons, dans des cafés, ou autres.  Tu veux connaître Dieu et connaître ta communauté, fais partie d’un Groupe Connexion!</p>
+        <span>19h - 21h</span>
+        <p>Les Groupes Connexions sont des moments de connexions et de fraternité.  La plupart de nos groupes opèrent le mercredi soir à 19h dans nos locaux, dans des maisons, dans des cafés ou autres.  Tu veux connaître Dieu et ta communauté, fais partie d’un Groupe Connexion!</p>
       </div>
     </div>
   </div>
