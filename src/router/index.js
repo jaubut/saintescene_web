@@ -6,7 +6,7 @@ import Jesus from '@/pages/Jesus'
 import Evenement from '@/pages/evenement'
 import About from '@/pages/about'
 import Merch from '@/pages/boutique'
-import Implique from '@/pages/implique'
+import Implique from '@/pages/impliquetoi'
 
 Vue.use(Meta)
 Vue.use(Router)
