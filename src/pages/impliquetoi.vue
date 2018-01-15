@@ -91,6 +91,8 @@ export default {
   .row
     flex-flow: row nowrap !important
     align-items: flex-start !important
+    &:hover
+      flex-flow: row wrap !important
     img
       width: 100% !important
     .texte
