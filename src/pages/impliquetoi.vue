@@ -3,7 +3,7 @@
     <Hero class="hero-implique"><h1>Implique-toi</h1></Hero>
     <div class="bloc span-2">
       <div class="texte">
-        <h2>Fais partie de l'extra-cool équipe</h2>
+        <h2>Fais partie des coulisses de Sainte Scène</h2>
         <p>C'est super simple. Ici à la <strong>Sainte Scène</strong> on aime travailler en équipe et on croit que de faire partie de la communauté passe par notre implication. On a des départements qui joue de la musique, à gérer la console de la régie, à faire partie de l'équipe multi-média, gérer un groupe de la relève, etc.</p>
       </div>
     </div>

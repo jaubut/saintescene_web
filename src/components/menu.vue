@@ -1,10 +1,8 @@
 <template>
   <div id="Menu">
     <router-link :to="{ name: 'Jesus' }">Jésus</router-link>
-    <router-link :to="{ name: 'Apropos' }">Nous sommes</router-link>
-    <router-link :to="{ name: 'Implique' }">Implique toi</router-link>
-    <router-link :to="{ name: 'Merch' }">Boutique</router-link>
     <router-link :to="{ name: 'Evenement'}">Événements</router-link>
+    <router-link :to="{ name: 'Implique' }">Implique toi</router-link>
   </div>
 </template>
 <script>
