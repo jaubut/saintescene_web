@@ -68,6 +68,7 @@ export default {
 
 <style lang="sass">
   @import url('https://fonts.googleapis.com/css?family=Barlow|Germania+One')
+  @import './assets/css/_global'
 
   html, body
     background: #A50E2F

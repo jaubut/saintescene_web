@@ -4,13 +4,23 @@
       <img v-if="hoverPhoto === false" class="play" src="../assets/play-logo.svg" alt="">
     </transition>
     <transition name="fade">
-      <div v-if="hoverPhoto" class="text">
+      <div v-if="hoverPhoto" :class="{ active: iframeVideo }" class="text">
         <h3 class="h3">{{ message.fields.title }}</h3>
         <p class="p">{{ message.fields.body }}</p>
-        <a href="#">
-          <div class="btn lire"><p>Jouer</p></div>
-        </a>
+        <div @click="openIframe" class="btn lire"><p>Jouer</p></div>
       </div>
+    </transition>
+    <transition name="fade">
+      <iframe
+        v-if="iframeVideo"
+        width="560"
+        height="315"
+        :src="message.fields.urlYoutube"
+        frameborder="0"
+        allow="autoplay;
+        encrypted-media"
+        allowfullscreen>
+      </iframe>
     </transition>
   </div>
 </template>
@@ -20,7 +30,8 @@ export default {
   props: ['message'],
   data () {
     return {
-      hoverPhoto: false
+      hoverPhoto: false,
+      iframeVideo: false
     }
   },
   methods: {
@@ -29,6 +40,10 @@ export default {
     },
     closeHover () {
       this.hoverPhoto = false
+      this.iframeVideo = false
+    },
+    openIframe () {
+      this.iframeVideo = true
     }
   }
 }
@@ -72,6 +87,10 @@ export default {
       background-color: #B2152D
       color: white
       align-self: center
+  .active
+    opacity: 0
+    width: 0
+    height: 0
   @media(max-width:468px)
     #blocMessage
       grid-column: span 2

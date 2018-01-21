@@ -13,7 +13,7 @@
     ></BlocMission>
     <div class="tag">
       <h3>Messages</h3>
-      <p>Voir tous <a href="#"><span class="link">les messages</span></a></p>
+      <p>Voir tous <router-link :to="{ name: 'Messages' }"><span class="link">les messages</span></router-link></p>
     </div>
     <div class="message-section">
       <template v-for="message in messages">

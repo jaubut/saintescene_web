@@ -7,6 +7,7 @@ import Evenement from '@/pages/evenement'
 import About from '@/pages/about'
 import Merch from '@/pages/boutique'
 import Implique from '@/pages/impliquetoi'
+import Messages from '@/pages/messages/index'
 
 Vue.use(Meta)
 Vue.use(Router)
@@ -48,6 +49,12 @@ export default new Router({
       path: '/implique',
       name: 'Implique',
       component: Implique,
+      props: true
+    },
+    {
+      path: '/messages',
+      name: 'Messages',
+      component: Messages,
       props: true
     }
   ]
