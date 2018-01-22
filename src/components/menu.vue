@@ -2,7 +2,7 @@
   <div id="Menu">
     <router-link :to="{ name: 'Jesus' }">Jésus</router-link>
     <router-link :to="{ name: 'Evenement'}">Événements</router-link>
-    <router-link :to="{ name: 'Implique' }">Implique toi</router-link>
+    <router-link :to="{ name: 'Implique' }">Implique-toi</router-link>
     <router-link :to="{ name: 'Messages' }">Messages</router-link>
   </div>
 </template>
