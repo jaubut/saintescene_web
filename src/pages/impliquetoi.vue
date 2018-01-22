@@ -93,8 +93,6 @@ export default {
     align-items: flex-start !important
     @media(max-width:468px)
         flex-flow: row wrap !important
-    img
-      width: 100% !important
     .texte
       text-align: left
       img

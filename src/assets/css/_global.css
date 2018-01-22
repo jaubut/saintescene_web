@@ -68,14 +68,10 @@ p {
   }
 }
 .row img {
-  width: 100% !important;
+  width: 50vw !important;
 }
 .row .texte {
   text-align: left;
-}
-.row img {
-  height: 100px;
-  width: 100px !important;
 }
 .row p {
   padding: 0;
@@ -85,10 +81,6 @@ p {
 }
 .grey {
   background-color: rgba(lightgrey, 0.2) !important;
-}
-img {
-  max-height: 50%;
-  border-radius: 5px;
 }
 .dark {
   color: white;
