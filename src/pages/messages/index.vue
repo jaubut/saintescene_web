@@ -54,5 +54,6 @@ export default {
   }
   .hero-messages {
     background-image: url(../../assets/sam-preche.jpg);
+    background-position: top !important;
   }
 </style>
