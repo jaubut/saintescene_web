@@ -26,8 +26,8 @@ Granby, Qc, J2J 0L6</p></a>
         <div class="text">
           <h3>Prochains Événements</h3>
           <p v-if="currentDate >= 5">Réunion Dimanche <span class="info">10h - 12h</span> </p>
-          <p v-if="currentDate <= 5">Bouclier du Matin <span class="info" v-if="currentDate === 2">Mardi 7h30</span><span class="info" v-if="currentDate === 3">Mercredi 7h30</span><span class="info" v-if="currentDate === 4">Jeudi 7h30</span><span class="info" v-if="currentDate === 5">Vendredi 7h30</span></p>
-          <p v-if="currentDate <= 3">B Study<span class="info">19h - 21h</span></p>
+          <p v-if="currentDate <= 5">Bouclier du Matin <span class="info" v-if="currentDate === 2 || 1">Mardi 7h30</span><span class="info" v-if="currentDate === 3">Mercredi 7h30</span><span class="info" v-if="currentDate === 4">Jeudi 7h30</span><span class="info" v-if="currentDate === 5">Vendredi 7h30</span></p>
+          <p v-if="currentDate <= 3">B Study<span class="info"> 19h - 21h</span></p>
         </div>
       </router-link>
     </div>
@@ -64,9 +64,9 @@ export default {
     a
       cursor: pointer
       padding: 0 10px
+      transition: all ease-in-out .5s
       &:hover
         transform: scale(1.5)
-        transition: ease-in-out
   .line
     grid-area: 1/2/2/4
     width: 100%
