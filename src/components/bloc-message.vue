@@ -59,6 +59,7 @@ export default {
     align-items: center
     background-repeat: no-repeat
     background-position: center center
+    background-size: 100%
     overflow: hidden
   .play
     position: absolute
