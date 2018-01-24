@@ -49,6 +49,7 @@ export default {
   #messages {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
     grid-auto-rows: auto;
     width: 100%;
   }
