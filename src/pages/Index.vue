@@ -16,7 +16,7 @@
       <p>Voir tous <router-link :to="{ name: 'Messages' }"><span class="link">les messages</span></router-link></p>
     </div>
     <div class="message-section">
-      <template v-for="message in messages">
+      <template v-for="message in messages.slice(0, 2)">
         <BlocMessage :message="message"></BlocMessage>
       </template>
     </div>
@@ -54,14 +54,6 @@ export default {
       })
         .then(response => {
           this.messages = response.items
-          return response
-        })
-      client.getEntries({
-        'content_type': 'penser',
-        order: '-sys.createdAt'
-      })
-        .then(response => {
-          this.penses = response.items
           return response
         })
     }
