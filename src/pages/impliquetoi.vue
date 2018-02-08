@@ -4,7 +4,7 @@
     <div class="bloc span-2">
       <div class="texte">
         <h2>Fais partie des coulisses de Sainte Scène</h2>
-        <p>C'est super simple. Ici à la <strong>Sainte Scène</strong> on aime travailler en équipe et on croit que de faire partie de la communauté passe par notre implication. On a des départements qui jouent de la musique, à gérer la console de la régie, à faire partie de l'équipe multi-média, gérer un groupe de la relève, etc.</p>
+        <p>C'est super simple. Ici à la <strong>Sainte Scène</strong> on aime travailler en équipe et on croit que faire partie de la communauté passe par notre implication. Voici les départements où vous pouvez vous impliquer: musique, régie, multi-média, Sainte Scène Junior (éducation chrétienne), ect.</p>
       </div>
     </div>
     <div class="bloc span-2 grey row">
