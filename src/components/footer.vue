@@ -26,7 +26,7 @@ Granby, Qc, J2J 0L6</p></a>
         <div class="text">
           <h3>Prochains Événements</h3>
           <p v-if="currentDate >= 5">Réunion Dimanche <span class="info">10h - 12h</span> </p>
-          <p v-if="currentDate <= 5">Boucliers du Matin <span class="info" v-if="currentDate === 2 || 1">Mardi 7h30</span><span class="info" v-if="currentDate === 3">Mercredi 7h30</span><span class="info" v-if="currentDate === 4">Jeudi 7h30</span><span class="info" v-if="currentDate === 5">Vendredi 7h30</span></p>
+          <p v-if="currentDate <= 5">Intercession <span class="info" v-if="currentDate === 2 || 1">Mardi 7h30</span><span class="info" v-if="currentDate === 3">Mercredi 7h30</span><span class="info" v-if="currentDate === 4">Jeudi 7h30</span><span class="info" v-if="currentDate === 5">Vendredi 7h30</span></p>
           <p v-if="currentDate <= 3">B Study<span class="info"> 19h - 21h</span></p>
         </div>
       </router-link>
