@@ -8,6 +8,7 @@ import About from '@/pages/about'
 import Merch from '@/pages/boutique'
 import Implique from '@/pages/impliquetoi'
 import Messages from '@/pages/messages/index'
+import Try from '@/pages/messages/try'
 
 Vue.use(Meta)
 Vue.use(Router)
@@ -55,6 +56,12 @@ export default new Router({
       path: '/messages',
       name: 'Messages',
       component: Messages,
+      props: true
+    },
+    {
+      path: '/messages/try',
+      name: 'Try',
+      component: Try,
       props: true
     }
   ]

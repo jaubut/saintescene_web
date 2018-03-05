@@ -16,9 +16,7 @@
     <div class="text-group">
       <div class="text">
         <h3>Nous rejoindre</h3>
-        <a href="https://www.google.ca/maps/place/1236+Rue+Saint+Charles+S,+Granby,+QC+J2J+0L6/@45.3416945,-72.7487631,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc9c54fe2bf925d:0x1c5a162a6849e0e1!8m2!3d45.3416945!4d-72.7465744"target="_blank"><p>1236, rue Saint-Charles Sud
-
-Granby, Qc, J2J 0L6</p></a>
+        <a href="https://www.google.ca/maps/place/1236+Rue+Saint+Charles+S,+Granby,+QC+J2J+0L6/@45.3416945,-72.7487631,17z/data=!3m1!4b1!4m5!3m4!1s0x4cc9c54fe2bf925d:0x1c5a162a6849e0e1!8m2!3d45.3416945!4d-72.7465744"target="_blank"><p>1236, rue Saint-Charles Sud Granby, Qc, J2J 0L6</p></a>
         <a href="tel:4503611838"><p>450-361-1838</p></a>
         <a href="mailto:allo@saintescene.com"><p>allo@saintescene.com</p></a>
       </div>

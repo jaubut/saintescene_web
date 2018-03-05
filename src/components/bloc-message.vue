@@ -1,28 +1,14 @@
 <template>
-  <div @mouseover="openHover" @mouseleave="closeHover"  id="blocMessage" :style="{'background-image': 'url(' + message.fields.background.fields.file.url + ')'}">
-    <transition name="fade">
-      <img v-if="hoverPhoto === false" class="play" src="../assets/play-logo.svg" alt="">
-    </transition>
-    <transition name="fade">
-      <div v-if="hoverPhoto" :class="{ active: iframeVideo }" class="text">
-        <h3 class="h3">{{ message.fields.title }}</h3>
-        <p class="p">{{ message.fields.body }}</p>
-        <div @click="openIframe" class="btn lire"><p>Jouer</p></div>
-      </div>
-    </transition>
-    <transition name="fade">
-      <iframe
-        v-if="iframeVideo"
-        width="560"
-        height="315"
-        :src="message.fields.urlYoutube"
-        frameborder="0"
-        allow="autoplay;
-        encrypted-media"
-        allowfullscreen>
-      </iframe>
-    </transition>
-  </div>
+  <transition name="fade">
+    <iframe
+    class="video-iframe"
+      :src="message.fields.urlYoutube"
+      frameborder="0"
+      allow="autoplay;
+      encrypted-media"
+      allowfullscreen>
+    </iframe>
+  </transition>
 </template>
 <script>
 export default {
@@ -30,16 +16,11 @@ export default {
   props: ['message'],
   data () {
     return {
-      hoverPhoto: false,
       iframeVideo: false
     }
   },
   methods: {
-    openHover () {
-      this.hoverPhoto = true
-    },
     closeHover () {
-      this.hoverPhoto = false
       this.iframeVideo = false
     },
     openIframe () {
@@ -50,10 +31,8 @@ export default {
 </script>
 <style lang="sass" scoped>
   #blocMessage
-    height: 55vh
     grid-column: span 1
     padding: 5%
-    background: #F8F8F8
     display: flex
     justify-content: center
     align-items: center
@@ -61,10 +40,14 @@ export default {
     background-position: center center
     background-size: 100%
     overflow: hidden
+  .video-iframe 
+    width: 100%
+    min-height: 350px
   .play
     position: absolute
     height: 75px
     width: auto
+    cursor: pointer
   .text
     height: 100%
     width:  100%

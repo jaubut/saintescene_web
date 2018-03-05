@@ -17,7 +17,7 @@ export default {
     align-items: center
     background-repeat: no-repeat
     background-size: cover
-    background-position: center center
+    background-position: top center
     filter: grayscale(100%)
     margin-bottom: 50px
     h1
