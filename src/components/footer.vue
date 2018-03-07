@@ -87,7 +87,7 @@ export default {
     justify-content: space-around
     align-items: left
     padding: 5%
-  @media(max-width:468px)
+  @media(max-width:748px)
     .text-group
       justify-content: flex-start
   .text
@@ -98,6 +98,8 @@ export default {
     padding-top: 50px
     p
       margin: 15px
+      color: white
+      font-size: 0.9rem
     h3
       font-family: 'Germania One', cursive
       font-weight: 100

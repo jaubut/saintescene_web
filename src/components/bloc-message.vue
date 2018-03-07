@@ -40,6 +40,8 @@ export default {
     background-position: center center
     background-size: 100%
     overflow: hidden
+  iframe
+    grid-column: span 1
   .video-iframe 
     width: 100%
     min-height: 350px
@@ -77,6 +79,8 @@ export default {
     height: 0
   @media(max-width:468px)
     #blocMessage
+      grid-column: span 2
+    iframe
       grid-column: span 2
     .text
       .h3

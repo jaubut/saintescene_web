@@ -134,9 +134,8 @@ export default {
       font-family: 'Germania One', cursive
       font-size: 3rem
       align-self: flex-start
-    p
       color: black
-      line-height: 1.6rem
+    p
       text-align: justify
       margin: 50px 0
   @media(max-width:468px)
@@ -147,6 +146,9 @@ export default {
     padding: 0
   p
     font-family: 'Barlow', sans-serif
+    font-size: 1.2rem
+    line-height: 1.6rem
+    color: #656567
   .fade-enter-active, .fade-leave-active
     transition: opacity .5s ease-in-out
   .fade-enter, .fade-leave-to

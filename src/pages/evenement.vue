@@ -85,10 +85,12 @@ export default {
     z-index: 1
     p
       text-align: center
+      color: white
+      font-size: 0.9rem
   .line
     border-right: 2px solid #B2152D
     grid-area: 1/2/2/3
-    height: 300px
+    height: 100%
     margin: 25% 0 10% 0
   .text-group
     grid-area: 1/4/2/5
@@ -105,8 +107,6 @@ export default {
       font-size: 0.9rem
       margin-top: -10px
     p
-      font-size: 1.2rem
-      line-height: 1.6rem
       margin-top: 10%
   .hero-event
     background-image: url(../assets/evenement-bstudy.jpg)
